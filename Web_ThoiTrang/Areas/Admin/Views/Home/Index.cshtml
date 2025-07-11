@@ -1,0 +1,31 @@
+﻿@* Đường dẫn: Web_ThoiTrang/Areas/Admin/Views/Home/Index.cshtml *@
+@{
+    ViewData["Title"] = "Admin Dashboard";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml"; // Đảm bảo sử dụng Layout riêng cho Admin
+}
+
+<h1 class="mt-4">Chào mừng đến với Admin Dashboard!</h1>
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active">Tổng quan</li>
+</ol>
+<div class="row">
+    <div class="col-xl-3 col-md-6">
+        <div class="card bg-primary text-white mb-4">
+            <div class="card-body">Tổng số người dùng</div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+                <a class="small text-white stretched-link" asp-area="Admin" asp-controller="Account" asp-action="Index">Xem chi tiết</a>
+                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-md-6">
+        <div class="card bg-warning text-white mb-4">
+            <div class="card-body">Tổng số sản phẩm</div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+                <a class="small text-white stretched-link" asp-area="Admin" asp-controller="Product" asp-action="Index">Xem chi tiết</a>
+                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-md-6">
+        <div class="card bg-success text-white mb-4">
